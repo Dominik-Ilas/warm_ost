@@ -78,7 +78,7 @@
    echo '<input type="submit" name="login" value="Login" style="width: 300px">';
  echo '</div>';
    echo '</form>';
- echo '<div class="links"> <a href="#">Forgot Password</a> <a href="http://localhost/illas3/register.php">Signup</a>';
+ echo '<div class="links"> <a href="#">Forgot Password</a> <a href="register.php">Signup</a>';
  echo '</div>';
  echo '</div>';
  echo '</div>';
