@@ -3,4 +3,5 @@
 
 What´s new:
 
-• Added database export
+• Added database export<br/>
+• Fixed empty rows created in database when registrating
