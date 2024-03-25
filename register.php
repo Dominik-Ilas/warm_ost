@@ -21,13 +21,18 @@ echo "Connected successfully";
     $sql = "INSERT INTO t_user (username, password, email)
     VALUES ('$meno', '$heslo', '$email')";
 
+    $sql2 = "DELETE FROM t_user WHERE username = ' '";
 
-    if ($conn->query($sql) === TRUE) {
-    echo "New record created successfully";
-    } else {
-    echo "Error: " . $sql . "<br>" . $conn->error;
-    }
 
+    
+        if ($conn->query($sql) === TRUE) {
+        echo "New record created successfully";
+
+        } else {
+        echo "Error: " . $sql . "<br>" . $conn->error;
+        }
+    
+    $conn->query($sql2);
 $conn->close();
 
 
@@ -66,7 +71,7 @@ echo '<html>';
    echo '<input type="submit" name="signin" value="SignIn" style="width: 300px;">';
  echo '</div>';
    echo '</form>';
- echo '<div class="links"> <a href="#">Forgot Password</a> <a href="http://localhost/illas3/index.php">Login</a>';
+ echo '<div class="links"> <a href="#">Forgot Password</a> <a href="index.php">Login</a>';
  echo '</div>';
  echo '</div>';
  echo '</div>';
