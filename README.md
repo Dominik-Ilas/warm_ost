@@ -1,6 +1,7 @@
 <H1>UPDATE 1.2</H1>
 
 What´s new:
+
 • fixed links in index.php and register.php <br/>
 • updated database
 
