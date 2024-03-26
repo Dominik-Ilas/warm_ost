@@ -5,10 +5,8 @@ What´s new:
 • updated database
 
 <br/>
-<H1>UPDATE 1.1</H1>
-
-
-What´s new:
+<H2>PREVIOUS UPDATES</H2>
+<H3>UPDATE 1.1</H3>
 
 • Added database export<br/>
 • Fixed empty rows created in database when registrating
