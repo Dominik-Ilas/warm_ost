@@ -36,7 +36,7 @@
                 $_SESSION['timeout'] = time();
                 $_SESSION['username'] = $_POST['username'];
                 //presmerovanie na dalsiu stranku
-                header("Location: welcome.php", true, 301);
+                header("Location: home2.php", true, 301);
                 exit();
           } else {
             $error =  "wrong password";
