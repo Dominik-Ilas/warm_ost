@@ -22,26 +22,26 @@ echo "< br / >";
 
 
 
-									<thead>
-										<tr>
-											<th>image</th>
-											<th>Name</th>
-											<th>Description</th>
-											<th>Price</th>
-										</tr>
-									</thead>
+	<thead>
+		<tr>
+			<th>image</th>
+			<th>Name</th>
+			<th>Description</th>
+			<th>Price</th>
+		</tr>
+	</thead>
 <?php
 $query = mysqli_query($connection, "SELECT * FROM t_shop");
 while($fetch = mysqli_fetch_array($query)){
 ?>
-									<tbody>
-										<tr>
-											<td><?php  echo '<img src="data:image/jpeg;base64,'.base64_encode( $fetch['img'] ).'" width="200" height="200" >';?></td>
-											<td><a><?php echo $fetch['name']?></a></td>
-											<td><a><?php echo $fetch['description']?></a></td>
-											<td><a><?php echo $fetch['price']?></a></td>
-										</tr>
-									</tbody>
+	<tbody>
+		<tr>
+			<td><?php  echo '<img src="data:image/jpeg;base64,'.base64_encode( $fetch['img'] ).'" width="200" height="200" >';?></td>
+			<td><a><?php echo $fetch['name']?></a></td>
+			<td><a><?php echo $fetch['description']?></a></td>
+			<td><a><?php echo $fetch['price']?></a></td>
+		</tr>
+	</tbody>
 								
 
 <?php    
