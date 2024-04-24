@@ -6,21 +6,24 @@ $dbname = "dominko_sk";
 $username = "dominko_sk2";
 $password = "Dominik123";
 
-echo "pripaja sa ...";
+
 
 $connection = new mysqli($servername, $username, $password, $dbname);
 
 if ($connection->connect_error) {
 die("Chyba pripojenie k db: " . $connection->connect_error);
 }
-echo " |Connected|" . "< br / >";
-echo "< br / >";
-
-
 ?>
+
+	<div class="filter__sort">
+		<span>Sort By</span>
+			<select>
+                <option value="0">Name</option>
+                <option value="1">Price</option>
+            </select> 
+	</div>
+
 <table class="table-bordered">
-
-
 
 	<thead>
 		<tr>
@@ -32,6 +35,10 @@ echo "< br / >";
 	</thead>
 <?php
 $query = mysqli_query($connection, "SELECT * FROM t_shop");
+
+
+
+
 while($fetch = mysqli_fetch_array($query)){
 ?>
 	<tbody>
