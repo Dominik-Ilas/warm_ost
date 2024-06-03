@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <?php
-requi
+
 $servername = "localhost";
 $dbname = "dominko_sk";
 $username = "dominko_sk2";
